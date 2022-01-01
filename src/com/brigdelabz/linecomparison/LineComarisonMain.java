@@ -33,7 +33,18 @@ public class LineComarisonMain {
         return lengthofLine;
     }
 
-
+    //Checking the Equality or Smaller Length Lines
+    public static String compareTo(double l1,double l2) {
+        if (l1 == l2) {
+            return "Line1 and Line2 are Equal.";
+        } else {
+            if (l1 > l2) {
+                return "Line 1 is Bigger Than Line 2";
+            } else {
+                return "Line 1 is Smaller Than Line 2";
+            }
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -55,6 +66,8 @@ public class LineComarisonMain {
         //Displaying the Length of Lines
         System.out.println("Length of Line1 : "+line1Length);
         System.out.println("Length of Line2 : "+line2Length);
+
+        System.out.println(compareTo(line1Length,line2Length));
 
     }
 }
